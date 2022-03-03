@@ -1,0 +1,25 @@
+ALGORITHM algorithm_sentence
+VAR
+    nbc : INTEGER :=0
+    nbw : INTEGER :=1
+    nbv : INTEGER :=0
+    c : CHAR
+BEGIN
+read (c)
+WHILE (c <> ".") DO
+    nbc = nbc+1
+IF (C in ["A","O","E","I","Y","U","a","o","e","i","y","u"] 
+  THEN
+    nbv = nbv+1
+  ELSE IF ( c =" ") 
+  THEN
+    nbw = nbw+1 
+
+END_IF
+END_WHILE
+
+ write (nbc)
+ write (nbw)
+ write (nbv)
+
+END
